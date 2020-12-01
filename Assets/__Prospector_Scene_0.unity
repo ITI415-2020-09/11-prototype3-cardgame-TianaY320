@@ -320,7 +320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.825}
   m_AnchorMax: {x: 0.5, y: 0.825}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -25.7}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &943268842
@@ -702,8 +702,8 @@ MonoBehaviour:
   startFaceUp: 1
   suitClub: {fileID: 21300000, guid: f2e3abd22e9ae4d17ab5c0659ff3e024, type: 3}
   suitDiamond: {fileID: 21300000, guid: f8c2745f3b53149c595d8fde43185468, type: 3}
-  suitHeart: {fileID: 21300000, guid: 3f3ffa8970b63467cad6ba98725b1c95, type: 3}
-  suitSpade: {fileID: 21300000, guid: a7994da692eef4500be008b80674eecb, type: 3}
+  suitHeart: {fileID: 21300000, guid: 2a5cef7373aa7d941ac31a0917e60fad, type: 3}
+  suitSpade: {fileID: 21300000, guid: 9d2ed339d3227ee49b8f92b78b335de9, type: 3}
   faceSprites:
   - {fileID: 21300000, guid: 0044ad2d99ea04858a663c3491cc9a91, type: 3}
   - {fileID: 21300000, guid: c10418368653749f796f63e87cde78ec, type: 3}
@@ -968,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.95}
   m_AnchorMax: {x: 0.5, y: 0.95}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -20.1, y: 0}
   m_SizeDelta: {x: 200, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013692199
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 2137570474}
   - component: {fileID: 2137570473}
   m_Layer: 0
-  m_Name: ProspectorBackground
+  m_Name: PyramidBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,7 +1081,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c8ca95433cc67409b8b7e8c5fed52cce, type: 2}
+  - {fileID: 2100000, guid: 79ae37902960f4742be45c2e6726b45b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
