@@ -700,22 +700,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startFaceUp: 1
-  suitClub: {fileID: 21300000, guid: e3f0d9734baadc34faade33fc4e0979c, type: 3}
-  suitDiamond: {fileID: 21300000, guid: 9acac1b29f2d6314fb623617a71bc1be, type: 3}
-  suitHeart: {fileID: 21300000, guid: 4215812f1fd40714b838e616fcfa4b29, type: 3}
-  suitSpade: {fileID: 21300000, guid: a798689d8f242ab4aacd6fab15b9d019, type: 3}
+  suitClub: {fileID: 21300000, guid: 38bf10c9456566c48933acd267f1fc32, type: 3}
+  suitDiamond: {fileID: 21300000, guid: 960fa6b8e2307e442a6f685cd83860a2, type: 3}
+  suitHeart: {fileID: 21300000, guid: 2a5cef7373aa7d941ac31a0917e60fad, type: 3}
+  suitSpade: {fileID: 21300000, guid: 9d2ed339d3227ee49b8f92b78b335de9, type: 3}
   faceSprites:
-  - {fileID: 21300000, guid: 0044ad2d99ea04858a663c3491cc9a91, type: 3}
-  - {fileID: 21300000, guid: c10418368653749f796f63e87cde78ec, type: 3}
-  - {fileID: 21300000, guid: 21a6739a4135346e6956ca54075d8c25, type: 3}
+  - {fileID: 21300000, guid: 709d323d3f96ce645ac8a947020a3458, type: 3}
+  - {fileID: 21300000, guid: 68ff9a4bbda3b5242859c978052d5bde, type: 3}
+  - {fileID: 21300000, guid: e0ed45d73b85b674586c524cbb6d779d, type: 3}
   - {fileID: 21300000, guid: 89af98d6d71f88941857efea59219f26, type: 3}
-  - {fileID: 21300000, guid: d86c46d6378144162964786d621fb0ca, type: 3}
-  - {fileID: 21300000, guid: 4ec6a5b1f47934636a6280e5abb475f8, type: 3}
-  - {fileID: 21300000, guid: ee100e0d0a1c04759a5a7537cf5e8752, type: 3}
+  - {fileID: 21300000, guid: 7586dd8f4346a8d4a9efad043088cb3e, type: 3}
+  - {fileID: 21300000, guid: 943d0ac696baa4d4780ff5cc8844075a, type: 3}
+  - {fileID: 21300000, guid: 89c2398fc62f0cb4abbc3d4de0cfb361, type: 3}
   - {fileID: 21300000, guid: 723c9cd409581dd4fa6253cdad166b28, type: 3}
-  - {fileID: 21300000, guid: c6955b0be0ed8469d8907eb75524a9d8, type: 3}
-  - {fileID: 21300000, guid: 6f1efb7f571f948dfa995e521af3100a, type: 3}
-  - {fileID: 21300000, guid: ef50d4f09a2b3425fbbdb8ad5f8957b0, type: 3}
+  - {fileID: 21300000, guid: 0b66b5683dfa6424c92f048e9af9cf9b, type: 3}
+  - {fileID: 21300000, guid: 75f8705f173d0504d95c2d39d43dfec0, type: 3}
+  - {fileID: 21300000, guid: e0833e7e50f5a9946b6f14fbc8d69e22, type: 3}
   - {fileID: 21300000, guid: d98e43ff9e6b5ba4fab07ac9e9dd5608, type: 3}
   rankSprites:
   - {fileID: 21300002, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
@@ -734,7 +734,7 @@ MonoBehaviour:
   - {fileID: 21300028, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
   - {fileID: 21300030, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
   - {fileID: 21300032, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
-  cardBack: {fileID: 21300000, guid: a8185ed8d47594bb8a3b8e2d9233f769, type: 3}
+  cardBack: {fileID: 21300000, guid: 8708deaa93502204c89a05b8a3e58e1c, type: 3}
   cardBackGold: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
   cardFront: {fileID: 21300000, guid: 873a7658b7ec742228520c7b15510f4d, type: 3}
   cardFrontGold: {fileID: 21300000, guid: 944dc539459fe4109b973bd4c97f68ee, type: 3}
