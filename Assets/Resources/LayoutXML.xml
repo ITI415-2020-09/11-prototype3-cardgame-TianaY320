@@ -58,6 +58,9 @@
 	
 	<!-- This positions the discard pile and target card -->
 	<slot type="discardpile" x="-1" y="3" layer="8"/>
+  
+  <!-- This positions the discard pile and target card -->
+  <slot type="pairpile" x="-6" y="4" layer="9"/>
 	
 </xml>
 	

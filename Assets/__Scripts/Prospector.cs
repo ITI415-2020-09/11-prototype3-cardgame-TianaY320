@@ -30,6 +30,7 @@ public class Prospector : MonoBehaviour {
     public CardProspector target;
     public List<CardProspector> tableau;
     public List<CardProspector> discardPile;
+    public List<CardProspector> pairPile;
     public FloatingScore fsRun;
 
     private void Awake()
@@ -208,6 +209,21 @@ public class Prospector : MonoBehaviour {
         cd.SetSortOrder(-100 + discardPile.Count);
     }
 
+    void MoveToPair(CardProspector cd)
+    {
+        // Set the state of the card to pair
+        cd.state = eCardState.pair;
+        pairPile.Add(cd); // Add it to the discardPile List<>
+        cd.transform.parent = layoutAnchor; // Update its transform parent
+
+        // Position this card on the discardPile
+        cd.transform.localPosition = new Vector3(layout.multiplier.x * layout.pairPile.x, layout.multiplier.y * layout.pairPile.y, -layout.pairPile.layerID + 0.5f);
+        cd.faceUp = true;
+        // Place it on top of the pile for depth sorting
+        cd.SetSortingLayerName(layout.pairPile.layerName);
+        cd.SetSortOrder(-100 + pairPile.Count);
+    }
+
     // Make cd the new target card
     void MoveToTarget(CardProspector cd)
     {
@@ -281,7 +297,9 @@ public class Prospector : MonoBehaviour {
 
                 // If we got here then it's a valid card
                 tableau.Remove(cd); // Remove it from the tableau List
-                MoveToTarget(cd); // Make it the target card
+                MoveToPair(cd);
+                MoveToTarget(Draw()); // Moves the next drawn card to the target
+                UpdateDrawPile(); // Restacks the drawPile
                 SetTableauFaces(); // Update tableau card face-ups
                 ScoreManager.EVENT(eScoreEvent.mine);
                 FloatingScoreHandler(eScoreEvent.mine);
