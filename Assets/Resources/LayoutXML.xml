@@ -42,9 +42,9 @@
   <slot id="21" x="2"  y="-3" faceup="1" layer="3" hiddenby="16,17" />
 	
 	<!-- Layer4, the next level.should have 3 -->
-	<slot id="22" x="-3" y="-4" faceup="1" layer="4" hiddenby="18,19" />
-	<slot id="23" x="-1" y="-4" faceup="1" layer="4" hiddenby="19,20" />
-	<slot id="24" x="1" y="-4" faceup="1" layer="4" hiddenby="20,21" />	
+	<slot id="22" x="-2.5" y="-4" faceup="1" layer="4" hiddenby="18,19" />
+	<slot id="23" x="-0.5" y="-4" faceup="1" layer="4" hiddenby="19,20" />
+	<slot id="24" x="1.5" y="-4" faceup="1" layer="4" hiddenby="20,21" />	
 	
 	<!-- Layer 5, the next level. should have 2 -->
 	<slot id="25"  x="-2" y="-5" faceup="1" layer="5" hiddenby="22,23" />

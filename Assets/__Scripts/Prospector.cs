@@ -15,8 +15,8 @@ public class Prospector : MonoBehaviour {
     public float xOffset = 3;
     public float yOffset = -2.5f;
     public Vector3 layoutCenter;
-    public Vector2 fsPosMid = new Vector2(0.5f, 0.90f);
-    public Vector2 fsPosRun = new Vector2(0.5f, 0.75f);
+    public Vector2 fsPosMid = new Vector2(0.25f, 0.90f);
+    public Vector2 fsPosRun = new Vector2(0.25f, 0.75f);
     public Vector2 fsPosMid2 = new Vector2(0.4f, 1.0f);
     public Vector2 fsPosEnd = new Vector2(0.5f, 0.95f);
     public float reloadDelay = 1f; // The delay between rounds
@@ -180,14 +180,14 @@ public class Prospector : MonoBehaviour {
         foreach (CardProspector cd in tableau)
         {
             bool faceUp = true; // Assume the card will be face-up
-            foreach (CardProspector cover in cd.hiddenBy)
-            {
+            //foreach (CardProspector cover in cd.hiddenBy)
+            //{
                 // If either of the covering cards are in the tableau
-                if (cover.state == eCardState.tableau)
-                {
-                    faceUp = false; // then this card is face-down
-                }
-            }
+              //  if (cover.state == eCardState.tableau)
+                //{
+                //    faceUp = false; // then this card is face-down
+                //}
+           // }
             cd.faceUp = faceUp; // Set the value on the card
         }
     }
@@ -372,13 +372,13 @@ public class Prospector : MonoBehaviour {
         if (!c0.faceUp || !c1.faceUp) return (false);
 
         // If they are 1 apart, they are adjacent
-        if (Mathf.Abs(c0.rank - c1.rank) == 1)
+        if (Mathf.Abs(c0.rank + c1.rank) ==13)
         {
             return (true);
         }
         // If one is Ace and the other King, they are adjacent
-        if (c0.rank == 1 && c1.rank == 13) return (true);
-        if (c0.rank == 13 && c1.rank == 1) return (true);
+        if (c0.rank == 13 && c1.rank == 13) return (true);
+
 
         //Otherwise, return false
         return (false);
